@@ -22,6 +22,7 @@ dev_::
 	@echo "  linux -- x86 running Linux 1.2.13 DYNAMIC"
 	@echo "  linux-static -- x86 running Linux 1.2.13 ALL STATIC"
 	@echo "  linux-static-motif -- x86 running Linux 1.2.13 STATIC MOTIF"
+	@echo "  openbsd -- tested on OpenBSD/amd64 6.4"
 	@echo "  sco -- x86 running SCO System V 3.2"
 	@echo "  sgi -- SGI Iris running IRIS 4.0.2"
 	@echo "  solaris-23 -- SPARCstation 20 running Solaris 2.3"
