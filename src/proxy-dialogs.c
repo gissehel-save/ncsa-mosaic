@@ -68,7 +68,7 @@
 #include <Xm/Label.h>
 #include <Xm/MessageB.h>
 
-#ifdef __bsdi__
+#if defined(__bsdi__) || defined(__OpenBSD__)
 #include <sys/malloc.h>
 #else
 #include <malloc.h>
