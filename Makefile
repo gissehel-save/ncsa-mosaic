@@ -119,6 +119,14 @@ p_linux_static_motif: rm_and_touch
 q_linux_static_motif: rm_and_touch
 	$(MAKE) -f makefiles/Makefile.linux q_static_motifd DEV_ARCH=linux
 
+dev_openbsd: rm_and_touch openbsd 
+openbsd: rm_and_touch
+	$(MAKE) -f makefiles/Makefile.openbsd DEV_ARCH=openbsd
+p_openbsd: rm_and_touch
+	$(MAKE) -f makefiles/Makefile.openbsd purifyd DEV_ARCH=openbsd
+q_openbsd: rm_and_touch
+	$(MAKE) -f makefiles/Makefile.openbsd quantifyd DEV_ARCH=openbsd
+
 dev_sco: rm_and_touch sco
 sco: rm_and_touch
 	$(MAKE) -f makefiles/Makefile.sco DEV_ARCH=sco

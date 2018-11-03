@@ -54,7 +54,7 @@
 
 /* Author: DXP */
 
-#include "png.h"
+#include <png.h>
 
 unsigned char *
 ReadPNG(FILE *infile,int *width, int *height, XColor *colrs);

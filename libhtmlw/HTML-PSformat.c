@@ -65,7 +65,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <math.h>
-#ifdef __bsdi__
+#if defined(__bsdi__) || defined(__OpenBSD__)
 #include <sys/malloc.h>
 #else
 #ifndef VAXC

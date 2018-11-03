@@ -71,7 +71,12 @@
 #include <signal.h>
 #include <sys/utsname.h>
 #include <string.h>
+
+#ifdef __OpenBSD__
+#include <sys/malloc.h>
+#else
 #include <malloc.h>
+#endif
 
 /* swp */
 #define _KCMS_H_

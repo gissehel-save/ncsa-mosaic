@@ -40,7 +40,7 @@ knrflag =
 #### For Convex whatever, do -DCONVEX
 #### For SCO ODT 3.0, do -DSCO -DSVR4 -DMOTIF1_2
 #### For Motorola SVR4, do -DSVR4 -DMOTOROLA -DMOTIF1_2
-#### sysconfigflags = -DMOTIF1_2 -DLINUX
+sysconfigflags = -DMOTIF1_2 -D__OpenBSD__
 
 #### System libraries.
 # syslibs = -lPW -lsun -lmalloc
@@ -74,8 +74,8 @@ syslibs = -lc
 # xinc = -I/usr/include/X11
 #### BSD/386
 # xinc = -I/usr/X11/include
-
-xinc = -I/usr/X11R6/include
+#### OpenBSD
+xinc = -I/usr/X11R6/include -I/usr/local/include
 
 #### X library locations.
 # xlibs = -lXm_s -lXmu -lXt_s -lX11_s
